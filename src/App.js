@@ -1,9 +1,19 @@
 import React from 'react';
+import { Route, Switch, NavLink, Link } from 'react-router-dom';
+import Login from './components/Login';
+import Account from './components/Account';
 
 function App() {
   return (
     <div>
-      <h1>Material UI Demo</h1>
+      <nav>
+        <NavLink exact to='/'>Login</NavLink>
+        <NavLink exact to='/account'>Account</NavLink>
+      </nav>
+      <Switch>
+        <Route exact path='/' component={Login} />
+        <Route exact path='/account' component={Account} />
+      </Switch>
     </div>
   );
 }
