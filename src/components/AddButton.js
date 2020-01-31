@@ -30,7 +30,7 @@ export default function AddButton() {
   const classes = useStyles();
 
   return (
-    <LightTooltip title="Add a phone number" placement="left">
+    <LightTooltip title="Add a customer" placement="left">
       <Fab color="primary" aria-label="add" className={classes.root}>
         <AddIcon />
       </Fab>

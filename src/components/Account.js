@@ -9,7 +9,8 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import Drawer from './Drawer';
-import ChooseAreaCode from './ChooseAreaCode';
+import TextField from '@material-ui/core/TextField';
+import ChooseState from './ChooseState';
 import Table from './Table';
 import AddButton from './AddButton';
 
@@ -42,15 +43,11 @@ const useStyles = makeStyles(theme => ({
     padding: '2rem 1.5rem',
     borderRadius: '0.5rem',
   },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-    padding: '0.5rem',
-    fontSize: '1rem',
-  },
+  box: {
+    '& > *': {
+      margin: '0 0.5rem 0.5rem 0'
+    }
+  }
 }));
 
 export default () => {
@@ -70,21 +67,24 @@ export default () => {
           <Link component={NavLink} to='/account'>
             Account
           </Link>
-          <Typography color="textPrimary">Phone Numbers</Typography>
+          <Typography color="textPrimary">Customers</Typography>
         </Breadcrumbs>
 
         <Typography component="h1" variant="h3" className={classes.title}>
-          Phone Numbers
+          Customers
         </Typography>
 
         <AddButton />
 
         <Paper elevation={3} className={classes.paper}>
           <Typography component="h1" variant="h6" className={classes.h6}>
-            Select an Area Code
+            Add a customer
           </Typography>
-          <Box>
-            <ChooseAreaCode />
+
+
+          <Box className={classes.box}>
+            <TextField label="Name" variant="outlined" />
+            <ChooseState />
           </Box>
         </Paper>
 

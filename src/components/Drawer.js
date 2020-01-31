@@ -4,7 +4,9 @@ import Divider      from '@material-ui/core/Divider';
 import Drawer       from '@material-ui/core/Drawer';
 import Hidden       from '@material-ui/core/Hidden';
 import IconButton   from '@material-ui/core/IconButton';
-import InboxIcon    from '@material-ui/icons/MoveToInbox';
+import Home         from '@material-ui/icons/Home';
+import People       from '@material-ui/icons/People';
+import Settings     from '@material-ui/icons/Settings';
 import List         from '@material-ui/core/List';
 import ListItem     from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -81,21 +83,25 @@ export default function ResponsiveDrawer(props) {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button>
+          <ListItemIcon><Home /></ListItemIcon>
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem button selected>
+          <ListItemIcon><People /></ListItemIcon>
+          <ListItemText primary="Customers" />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon><MailIcon /></ListItemIcon>
+          <ListItemText primary="Messages" />
+        </ListItem>
       </List>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button>
+          <ListItemIcon><Settings /></ListItemIcon>
+          <ListItemText primary="Settings" />
+        </ListItem>
       </List>
     </div>
   );

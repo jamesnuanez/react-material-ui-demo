@@ -19,10 +19,10 @@ const StyledTableCell = withStyles(theme => ({
   },
 }))(TableCell);
 
-const phoneNumbers = [
-  { number: '(999) 888-7777', state: 'Alabama' },
-  { number: '(555) 444-3333', state: 'Alaska' },
-  { number: '(222) 111-2222', state: 'Arizona' },
+const customers = [
+  { id: 1, name: 'John', state: 'Alabama' },
+  { id: 2, name: 'Jane', state: 'Alaska' },
+  { id: 3, name: 'Jeff', state: 'Arizona' },
 ];
 
 const useStyles = makeStyles({
@@ -41,17 +41,17 @@ export default function CustomizedTables() {
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Phone Numbers</StyledTableCell>
+            <StyledTableCell>Name</StyledTableCell>
             <StyledTableCell>State</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {phoneNumbers.map(number => (
-            <TableRow key={number.number}>
+          {customers.map(customer => (
+            <TableRow key={customer.id}>
               <StyledTableCell component="th" scope="row">
-                {number.number}
+                {customer.name}
               </StyledTableCell>
-              <StyledTableCell>{number.state}</StyledTableCell>
+              <StyledTableCell>{customer.state}</StyledTableCell>
             </TableRow>
           ))}
         </TableBody>
