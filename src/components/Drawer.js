@@ -112,7 +112,6 @@ export default function ResponsiveDrawer(props) {
         <Toolbar className={classes.navtoolbar}>
           <div>
             <IconButton
-              color="inherit"
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
