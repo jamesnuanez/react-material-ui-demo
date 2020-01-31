@@ -4,6 +4,10 @@ Built by [James Nuanez](https://www.jamesnuanez.com) in 2020.
 
 https://github.com/jamesnuanez/
 
+## Live demo
+
+https://react-material-ui-demo.netlify.com/
+
 ## About
 
 This is a simple front-end that demos Material-UI. There are two pages available:
