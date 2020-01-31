@@ -12,11 +12,9 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     fontSize: '1.5rem',
-    color: '#565656',
     textTransform: 'none',
   },
   button: {
-    color: '#565656',
     textTransform: 'none',
     fontWeight: 600,
     padding: '0.5rem 2rem',

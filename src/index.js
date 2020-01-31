@@ -12,6 +12,32 @@ const theme = createMuiTheme({
     primary: {
       main: '#D91C5C',
     },
+    text: {
+      primary: '#565656',
+    },
+  },
+  typography: {
+    body1: {
+      color: '#565656'
+    },
+    h1: {
+      color: '#565656'
+    },
+    h2: {
+      color: '#565656'
+    },
+    h3: {
+      color: '#565656'
+    },
+    h4: {
+      color: '#565656'
+    },
+    h5: {
+      color: '#565656'
+    },
+    h6: {
+      color: '#565656'
+    },
   },
 });
 

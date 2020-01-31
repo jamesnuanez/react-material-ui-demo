@@ -7,7 +7,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 const LightTooltip = withStyles(theme => ({
   tooltip: {
     backgroundColor: theme.palette.common.white,
-    color: 'rgba(0, 0, 0, 0.87)',
+    color: theme.palette.text.primary,
     boxShadow: theme.shadows[2],
     fontSize: '1rem',
     marginRight: '1rem',
@@ -23,10 +23,6 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('sm')]: {
       right: '0',
     },
-  },
-  tooltip: {
-    background: '#fff',
-    color: '#565656',
   },
 }));
 
