@@ -1,16 +1,15 @@
 import React from 'react';
 import useAutocomplete from '@material-ui/lab/useAutocomplete';
 import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
 
 const useStyles = makeStyles(theme => ({
   container: {
     position: 'relative',
     display: 'inline-block',
-    border: '1px solid #ccc',
     borderRadius: '0.2rem',
   },
   outlined: {
-    borderColor: theme.palette.primary.main,
   },
   label: {
     display: 'block',
@@ -19,20 +18,20 @@ const useStyles = makeStyles(theme => ({
     display: 'inline-block',
     outline: 'none',
     border: 0,
-    padding: '0.5rem 1rem',
     borderRadius: '0.2rem',
     fontSize: '1rem',
+    boxShadown: 'none',
   },
   listbox: {
     margin: 0,
     padding: 0,
     zIndex: 1,
-    border: '1px solid ' + theme.palette.primary.main,
+    border: '2px solid ' + theme.palette.primary.main,
     borderBottomLeftRadius: '0.2rem',
     borderBottomRightRadius: '0.2rem',
     borderTop: 0,
-    left: '-1px',
-    right: '-1px',
+    left: '0',
+    right: '0',
     top: '90%',
     position: 'absolute',
     listStyle: 'none',
@@ -76,7 +75,7 @@ export default function ChooseState() {
           : classes.container
       }
     >
-      <input
+      <TextField
         className={classes.input}
         {...getInputProps()}
         label="State"
