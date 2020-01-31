@@ -22,7 +22,10 @@ const useStyles = makeStyles(theme => ({
     padding: '0.5rem 2rem',
     '&:last-child': {
       flexGrow: 1,
-    }
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: '0.25rem',
+    },
   },
 }));
 
