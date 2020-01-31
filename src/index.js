@@ -10,33 +10,33 @@ import { ThemeProvider } from '@material-ui/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#D91C5C',
+      main: '#D97433',
     },
     text: {
-      primary: '#565656',
+      primary: '#495965',
     },
   },
   typography: {
     body1: {
-      color: '#565656'
+      color: '#495965'
     },
     h1: {
-      color: '#565656'
+      color: '#495965'
     },
     h2: {
-      color: '#565656'
+      color: '#495965'
     },
     h3: {
-      color: '#565656'
+      color: '#495965'
     },
     h4: {
-      color: '#565656'
+      color: '#495965'
     },
     h5: {
-      color: '#565656'
+      color: '#495965'
     },
     h6: {
-      color: '#565656'
+      color: '#495965'
     },
   },
 });
