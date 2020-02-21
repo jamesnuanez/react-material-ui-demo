@@ -3,7 +3,7 @@
   "description": "A demonstration of the Material-UI framework",
   "author": "James Nuanez <james@jamesnuanez.com> (http://www.jamesnuanez.com)",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.0",
